@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+header {
+    background-color: #333; /* Dark background for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2em;
+    color: #FFD700; /* Gold for logo */
+}
+
+.cuisines {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h2, h3 {
+    color: #0056b3; /* Blue for headings */
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.cuisine-container {
+    display: flex;
+    overflow: hidden; /* Hide overflow to show only one item */
+    width: 100%; /* Full width of the container */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.cuisine {
+    display: flex; /* Use flex for vertical alignment */
+    flex-direction: column; /* Stack the heading and image vertically */
+    align-items: center; /* Center the content */
+    flex: 0 0 100%; /* Each cuisine takes full width */
+    position: relative;
+    text-align: center;
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* Box background color */
+}
+
+.cuisine img {
+    width: 80%; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.hover-message {
+    display: none; /* Initially hidden */
+    position: absolute;
+    bottom: 10px; /* Position above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1; /* Make sure it appears above other elements */
+}
+
+.slider-btn {
+    background-color: #28a745; /* Green for buttons */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.slider-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slider-dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb; /* Inactive dot color */
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: #ff0000; /* Red for active dot */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark footer */
+    color: white;
+}
+
+/* Additional styling for alerts */
+.alert {
+    color: red; /* Red text for alerts */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    margin: 20px auto; /* Center the section with margin */
+    max-width: 900px; /* Limit width for readability */
+}
+
+.about h2 {
+    color: #0056b3; /* Blue for headings */
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 2em; /* Increase heading size */
+}
+
+.about-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: row; /* Row layout */
+    gap: 20px; /* Space between image and text */
+}
+
+.about-text {
+    max-width: 500px; /* Limit width for text */
+    text-align: left; /* Align text left */
+}
+
+.about p {
+    color: #333; /* Dark gray for text */
+    font-size: 1.1em; /* Slightly larger font for readability */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.about-image {
+    width: 40%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for image */
+}
+
+.contact-btn {
+    background-color: #28a745; /* Green for button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.contact-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark footer */
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #0056b3; /* Header color */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffcc00; /* Hero section color */
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+}
+
+.hero button {
+    background-color: #ff5733; /* Button color */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Larger padding */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Space above button */
+}
+
+.hero button:hover {
+    background-color: #c70039; /* Darker shade on hover */
+}
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h2 {
+    color: #0056b3; /* Blue for headings */
+    margin-bottom: 30px;
+}
+
+.featured {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* Contrast background */
+}
+
+.featured h2 {
+    color: #0056b3; /* Blue for headings */
+    margin-bottom: 20px;
+}
+
+.featured-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.featured-item {
+    background-color: #f9f9f9; /* Light grey */
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    cursor: pointer;
+    width: 200px; /* Fixed width for items */
+}
+
+.featured-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.featured-item img {
+    width: 100%; /* Full width */
+    border-radius: 10px;
+}
+
+.featured-item h3 {
+    color: #333; /* Dark text */
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark footer */
+    color: white;
+}
+
+footer a {
+    color: #ffcc00; /* Yellow for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors Unleashed - Cuisines</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ Flavors Unleashed</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="cuisines.html">Cuisines</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cuisines" class="cuisines">
+            <h2>Explore Cuisines</h2>
+            <h3>Every bite tells a story</h3>
+            <div class="slider">
+                <button class="slider-btn prev" onclick="moveSlider(-1)">&#10094;</button>
+                <div class="cuisine-container">
+                    <div class="cuisine" data-name="Street Food">
+                        
+                        <h3>Street Food</h3>
+                        <img src="https://static.toiimg.com/photo/104309292.cms" alt="Street Food">
+                        <p>Discover the vibrant flavors of street vendors.</p>
+                        <div class="hover-message"></div>
+                    </div>
+                    <div class="cuisine" data-name="Gourmet Cuisine">
+                        
+                        <h3>Gourmet Cuisine</h3>
+                        <img src="https://www.discoveryvillages.com/wp-content/uploads/2022/05/7-benefits-of-gourmet-meals-for-your.jpg" alt="Gourmet Cuisine">
+                        <p>Indulge in meticulously crafted gourmet dishes.</p>
+                        <div class="hover-message"></div>
+                    </div>
+                    <div class="cuisine" data-name="Desserts">
+                        
+                        <h3>Desserts</h3>
+                        <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2022/06/LINK-TRAFFIC-18.jpg?im=AspectCrop=(16,9);Resize,width=742;" alt="Desserts">
+                        <p>Satisfy your sweet tooth with delightful desserts.</p>
+                        <div class="hover-message"></div>
+                    </div>
+                    <div class="cuisine" data-name="Vegan Cuisine">
+                        <h3>Vegan Cuisine</h3>
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/06/GettyImages-1416818056-6ecd1e0.jpg?quality=90&resize=556,505" alt="Vegan Cuisine">
+                        
+                        <p>Explore delicious plant-based dishes.</p>
+                        <div class="hover-message"></div>
+                    </div>
+                    <div class="cuisine" data-name="Italian Cuisine">
+                        <h3>Italian Cuisine</h3>
+                        <img src="https://recipes.net/wp-content/uploads/2023/09/italian-food-traditions-1695103637.jpg" alt="Italian Cuisine">
+                        
+                        <p>Enjoy classic pasta and rich flavors of Italy.</p>
+                        <div class="hover-message"></div>
+                    </div>
+                    <div class="cuisine" data-name="Mexican Cuisine">
+                        <h3>Mexican Cuisine</h3>
+                        <img src="https://www.studyspanishlatinamerica.com/blog/wp-content/uploads/2021/06/guide-to-popular-mexican-food.jpg" alt="Mexican Cuisine">
+                       
+                        <p>Taste the bold and spicy flavors of Mexico.</p>
+                        <div class="hover-message"></div>
+                    </div>
+                    <div class="cuisine" data-name="Japanese Cuisine">
+                        <h3>Japanese Cuisine</h3>
+                        <img src="https://www.allrecipes.com/thmb/XT7-9MROYJZvNyQR4J40HGOVDmQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/19511smoked-salmon-sushi-rollfabeveryday4x3-159a22b4d3ac49fe9a146db94b53c930.jpg" alt="Japanese Cuisine">
+                        
+                        <p>Delight in the fresh and delicate flavors of Japan.</p>
+                        <div class="hover-message"></div>
+                    </div>
+                </div>
+                <button class="slider-btn next" onclick="moveSlider(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flavors Unleashed. All rights reserved.</p>
+        <p id="contact"><a href="mailto:info@flavorsunleashed.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>

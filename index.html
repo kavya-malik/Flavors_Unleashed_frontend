@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors Unleashed - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ Flavors Unleashed</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="cuisines.html">Cuisines</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Flavors Unleashed</h1>
+            <p>Where every bite tells a story!</p>
+            
+            <img src="food.png" alt="Delicious food" class="hero-image">
+            <br>
+            <button onclick="alert('Let the flavors take you on a journey!')">Get Started</button>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Welcome to my culinary journey! I love exploring different cuisines and celebrating the stories behind every dish. Join me as we discover flavors from street food to gourmet dining.</p>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Cuisines</h2>
+            <div class="featured-container">
+                <div class="featured-item" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showCuisineAlert('Street Food')">
+                    <img src="https://static.toiimg.com/photo/104309292.cms" alt="Street Food">
+                    <h3>Street Food</h3>
+                </div>
+                <div class="featured-item" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showCuisineAlert('Gourmet Cuisine')">
+                    <img src="https://www.discoveryvillages.com/wp-content/uploads/2022/05/7-benefits-of-gourmet-meals-for-your.jpg" alt="Gourmet Cuisine">
+                    <h3>Gourmet Cuisine</h3>
+                </div>
+                <div class="featured-item" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showCuisineAlert('Desserts')">
+                    <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2022/06/LINK-TRAFFIC-18.jpg?im=AspectCrop=(16,9);Resize,width=742;" alt="Desserts">
+                    <h3>Desserts</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flavors Unleashed. All rights reserved.</p>
+        <p id="contact"><a href="mailto:info@flavorsunleashed.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>
